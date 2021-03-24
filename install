@@ -1,0 +1,16 @@
+#!/bin/bash
+
+CURRENT_PATH=`pwd`
+echo $CURRENT_PATH
+if [ -e $HOME/.vim ]; then
+  echo '.vim already exist'
+else
+  echo 'installing'
+  ln -s $CURRENT_PATH $HOME/.vim
+fi
+
+if [ -e $HOME/.SpaceVim.d ]; then
+  echo ".SpaceVim.d already exist"
+else
+  ln -s $CURRENT_PATH/SpaceVim.d $HOME/.SpaceVim.d 
+fi

@@ -1,0 +1,5 @@
+pack/vendor/start/*/.*
+pack/vendor/opt/*/.*
+autoload/*/.*
+plugged/*
+vi.vim
